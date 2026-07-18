@@ -1,0 +1,33 @@
+{
+  "name": "genpark-claw-cloud-task-delegator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Long-running task async cloud delegator with structured result reporting.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "async",
+    "cloud",
+    "delegation"
+  ],
+  "inputs": {
+    "task_description": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "task_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "eta_seconds": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
